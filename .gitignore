@@ -1,0 +1,5 @@
+.idea/
+polls/__pycache__/
+polls/migrations/__pycache__/
+CreativeDjango/__pycache__/
+db.sqlite3

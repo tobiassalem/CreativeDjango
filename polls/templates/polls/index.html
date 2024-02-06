@@ -1,7 +1,12 @@
+
+<div align="center">
+    <h3>Welcome to the Polls app!</h3>
+    Today we have the following questions available
+</div>
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
